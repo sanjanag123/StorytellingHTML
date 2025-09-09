@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Clouds</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-image: linear-gradient(to right, rgb(201, 247, 255), rgb(213, 238, 255));
+      text-align: center;
+      padding: 50px;
+      color: #444;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+    .choice a {
+      display: inline-block;
+      padding: 15px 25px;
+      margin: 15px;
+      background-color: #fff;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: 600;
+      color: #444;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s, background 0.3s;
+    }
+    .choice a:hover {
+      transform: scale(1.05);
+      background: #ccd9ff;
+    }
+  </style>
+</head>
+<body>
+  <h1>☁️ You’re Floating Among the Clouds ☁️</h1>
+  <p>The world looks tiny below you. A soft breeze carries you higher.</p>
+
+  <div class="choice">
+    <a href="index.html">⬅️ Go Back</a>
+  </div>
+  <div class="choice">
+    <a href="forest.html">🌳 Descend Into the Forest</a>
+  </div>
+
+  <!-- Clouds Drawing -->
+  <div class="clouds-drawing">
+    <svg width="100%" height="200" viewBox="0 0 800 200" style="position: fixed; bottom: 0; left: 0; z-index: -1;">
+      <!-- Cloud 1 - Large fluffy cloud -->
+      <g transform="translate(100, 80)">
+        <ellipse cx="0" cy="0" rx="40" ry="20" fill="#ffffff" opacity="0.9"/>
+        <ellipse cx="-25" cy="-5" rx="25" ry="15" fill="#ffffff" opacity="0.9"/>
+        <ellipse cx="25" cy="-8" rx="30" ry="18" fill="#ffffff" opacity="0.9"/>
+        <ellipse cx="-15" cy="10" rx="20" ry="12" fill="#ffffff" opacity="0.9"/>
+        <ellipse cx="15" cy="12" rx="25" ry="15" fill="#ffffff" opacity="0.9"/>
+      </g>
+      
+      <!-- Cloud 2 - Medium cloud -->
+      <g transform="translate(300, 60)">
+        <ellipse cx="0" cy="0" rx="30" ry="15" fill="#ffffff" opacity="0.8"/>
+        <ellipse cx="-20" cy="-3" rx="18" ry="12" fill="#ffffff" opacity="0.8"/>
+        <ellipse cx="20" cy="-5" rx="22" ry="14" fill="#ffffff" opacity="0.8"/>
+        <ellipse cx="-10" cy="8" rx="15" ry="10" fill="#ffffff" opacity="0.8"/>
+        <ellipse cx="10" cy="10" rx="18" ry="12" fill="#ffffff" opacity="0.8"/>
+      </g>
+      
+      <!-- Cloud 3 - Small cloud -->
+      <g transform="translate(500, 70)">
+        <ellipse cx="0" cy="0" rx="20" ry="12" fill="#ffffff" opacity="0.7"/>
+        <ellipse cx="-12" cy="-2" rx="12" ry="8" fill="#ffffff" opacity="0.7"/>
+        <ellipse cx="12" cy="-3" rx="15" ry="10" fill="#ffffff" opacity="0.7"/>
+        <ellipse cx="-6" cy="6" rx="10" ry="7" fill="#ffffff" opacity="0.7"/>
+        <ellipse cx="6" cy="8" rx="12" ry="8" fill="#ffffff" opacity="0.7"/>
+      </g>
+      
+      <!-- Cloud 4 - Wispy cloud -->
+      <g transform="translate(650, 50)">
+        <ellipse cx="0" cy="0" rx="25" ry="10" fill="#ffffff" opacity="0.6"/>
+        <ellipse cx="-15" cy="-2" rx="15" ry="8" fill="#ffffff" opacity="0.6"/>
+        <ellipse cx="15" cy="-3" rx="18" ry="9" fill="#ffffff" opacity="0.6"/>
+        <ellipse cx="-8" cy="5" rx="12" ry="6" fill="#ffffff" opacity="0.6"/>
+        <ellipse cx="8" cy="6" rx="14" ry="7" fill="#ffffff" opacity="0.6"/>
+      </g>
+      
+      <!-- Cloud 5 - Background cloud -->
+      <g transform="translate(200, 90)" opacity="0.5">
+        <ellipse cx="0" cy="0" rx="35" ry="18" fill="#ffffff"/>
+        <ellipse cx="-22" cy="-4" rx="20" ry="12" fill="#ffffff"/>
+        <ellipse cx="22" cy="-6" rx="25" ry="15" fill="#ffffff"/>
+        <ellipse cx="-12" cy="10" rx="18" ry="11" fill="#ffffff"/>
+        <ellipse cx="12" cy="12" rx="20" ry="13" fill="#ffffff"/>
+      </g>
+      
+      <!-- Cloud 6 - Small background cloud -->
+      <g transform="translate(400, 100)" opacity="0.4">
+        <ellipse cx="0" cy="0" rx="18" ry="10" fill="#ffffff"/>
+        <ellipse cx="-10" cy="-2" rx="10" ry="6" fill="#ffffff"/>
+        <ellipse cx="10" cy="-3" rx="12" ry="7" fill="#ffffff"/>
+        <ellipse cx="-5" cy="5" rx="8" ry="5" fill="#ffffff"/>
+        <ellipse cx="5" cy="6" rx="10" ry="6" fill="#ffffff"/>
+      </g>
+      
+      <!-- Cloud 7 - Far background cloud -->
+      <g transform="translate(600, 110)" opacity="0.3">
+        <ellipse cx="0" cy="0" rx="22" ry="12" fill="#ffffff"/>
+        <ellipse cx="-12" cy="-3" rx="12" ry="8" fill="#ffffff"/>
+        <ellipse cx="12" cy="-4" rx="15" ry="9" fill="#ffffff"/>
+        <ellipse cx="-6" cy="6" rx="10" ry="6" fill="#ffffff"/>
+        <ellipse cx="6" cy="7" rx="12" ry="7" fill="#ffffff"/>
+      </g>
+      
+      <!-- Cloud 8 - Edge cloud -->
+      <g transform="translate(50, 75)" opacity="0.6">
+        <ellipse cx="0" cy="0" rx="28" ry="14" fill="#ffffff"/>
+        <ellipse cx="-18" cy="-3" rx="16" ry="10" fill="#ffffff"/>
+        <ellipse cx="18" cy="-4" rx="20" ry="12" fill="#ffffff"/>
+        <ellipse cx="-9" cy="7" rx="14" ry="8" fill="#ffffff"/>
+        <ellipse cx="9" cy="8" rx="16" ry="9" fill="#ffffff"/>
+      </g>
+    </svg>
+  </div>
+</body>
+</html>

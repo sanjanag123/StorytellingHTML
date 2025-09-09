@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mystical Adventure</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-image: linear-gradient(to right, rgb(225, 201, 255), rgb(255, 213, 238));
+      text-align: center;
+      padding: 50px;
+      color: #444;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+    .choice a {
+      display: inline-block;
+      padding: 15px 25px;
+      margin: 15px;
+      background-color: #fff;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: 600;
+      color: #444;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s, background 0.3s;
+    }
+    .choice a:hover {
+      transform: scale(1.05);
+      background: #ffd1dc;
+    }
+  </style>
+</head>
+<body>
+  <h1>🌸 Welcome to Your Mystical Adventure 🌸</h1>
+  <p>You’re in a magical meadow. Where would you like to go?</p>
+
+  <div class="choice">
+    <a href="forest.html">🌳 Walk Through the Forest</a>
+  </div>
+  <div class="choice">
+    <a href="clouds.html">☁️ Fly to the Sky </a>
+  </div>
+
+  <!-- Flower Meadow Drawing -->
+  <div class="meadow-drawing">
+    <svg width="100%" height="200" viewBox="0 0 800 200" style="position: fixed; bottom: 0; left: 0; z-index: -1;">
+      <!-- Grass base -->
+      <rect width="800" height="60" y="140" fill="#7cb342"/>
+      
+      <!-- Flowers - Evenly spaced rows -->
+      <!-- Row 1 - Pink flowers -->
+      <g transform="translate(80, 130)">
+        <circle cx="0" cy="0" r="6" fill="#ff69b4"/>
+        <circle cx="0" cy="0" r="4" fill="#ffb6c1"/>
+        <line x1="0" y1="0" x2="0" y2="15" stroke="#4caf50" stroke-width="2"/>
+      </g>
+      
+      <g transform="translate(200, 130)">
+        <circle cx="0" cy="0" r="6" fill="#ff69b4"/>
+        <circle cx="0" cy="0" r="4" fill="#ffb6c1"/>
+        <line x1="0" y1="0" x2="0" y2="15" stroke="#4caf50" stroke-width="2"/>
+      </g>
+      
+      <g transform="translate(320, 130)">
+        <circle cx="0" cy="0" r="6" fill="#ff69b4"/>
+        <circle cx="0" cy="0" r="4" fill="#ffb6c1"/>
+        <line x1="0" y1="0" x2="0" y2="15" stroke="#4caf50" stroke-width="2"/>
+      </g>
+      
+      <g transform="translate(440, 130)">
+        <circle cx="0" cy="0" r="6" fill="#ff69b4"/>
+        <circle cx="0" cy="0" r="4" fill="#ffb6c1"/>
+        <line x1="0" y1="0" x2="0" y2="15" stroke="#4caf50" stroke-width="2"/>
+      </g>
+      
+      <g transform="translate(560, 130)">
+        <circle cx="0" cy="0" r="6" fill="#ff69b4"/>
+        <circle cx="0" cy="0" r="4" fill="#ffb6c1"/>
+        <line x1="0" y1="0" x2="0" y2="15" stroke="#4caf50" stroke-width="2"/>
+      </g>
+      
+      <g transform="translate(680, 130)">
+        <circle cx="0" cy="0" r="6" fill="#ff69b4"/>
+        <circle cx="0" cy="0" r="4" fill="#ffb6c1"/>
+        <line x1="0" y1="0" x2="0" y2="15" stroke="#4caf50" stroke-width="2"/>
+      </g>
+      
+      <!-- Row 2 - Yellow flowers (offset) -->
+      <g transform="translate(140, 120)">
+        <circle cx="0" cy="0" r="5" fill="#ffd700"/>
+        <circle cx="0" cy="0" r="3" fill="#ffff99"/>
+        <line x1="0" y1="0" x2="0" y2="15" stroke="#4caf50" stroke-width="2"/>
+      </g>
+      
+      <g transform="translate(260, 120)">
+        <circle cx="0" cy="0" r="5" fill="#ffd700"/>
+        <circle cx="0" cy="0" r="3" fill="#ffff99"/>
+        <line x1="0" y1="0" x2="0" y2="15" stroke="#4caf50" stroke-width="2"/>
+      </g>
+      
+      <g transform="translate(380, 120)">
+        <circle cx="0" cy="0" r="5" fill="#ffd700"/>
+        <circle cx="0" cy="0" r="3" fill="#ffff99"/>
+        <line x1="0" y1="0" x2="0" y2="15" stroke="#4caf50" stroke-width="2"/>
+      </g>
+      
+      <g transform="translate(500, 120)">
+        <circle cx="0" cy="0" r="5" fill="#ffd700"/>
+        <circle cx="0" cy="0" r="3" fill="#ffff99"/>
+        <line x1="0" y1="0" x2="0" y2="15" stroke="#4caf50" stroke-width="2"/>
+      </g>
+      
+      <g transform="translate(620, 120)">
+        <circle cx="0" cy="0" r="5" fill="#ffd700"/>
+        <circle cx="0" cy="0" r="3" fill="#ffff99"/>
+        <line x1="0" y1="0" x2="0" y2="15" stroke="#4caf50" stroke-width="2"/>
+      </g>
+      
+      <!-- Row 3 - Purple flowers -->
+      <g transform="translate(110, 125)">
+        <circle cx="0" cy="0" r="5" fill="#9370db"/>
+        <circle cx="0" cy="0" r="3" fill="#dda0dd"/>
+        <line x1="0" y1="0" x2="0" y2="15" stroke="#4caf50" stroke-width="2"/>
+      </g>
+      
+      <g transform="translate(230, 125)">
+        <circle cx="0" cy="0" r="5" fill="#9370db"/>
+        <circle cx="0" cy="0" r="3" fill="#dda0dd"/>
+        <line x1="0" y1="0" x2="0" y2="15" stroke="#4caf50" stroke-width="2"/>
+      </g>
+      
+      <g transform="translate(350, 125)">
+        <circle cx="0" cy="0" r="5" fill="#9370db"/>
+        <circle cx="0" cy="0" r="3" fill="#dda0dd"/>
+        <line x1="0" y1="0" x2="0" y2="15" stroke="#4caf50" stroke-width="2"/>
+      </g>
+      
+      <g transform="translate(470, 125)">
+        <circle cx="0" cy="0" r="5" fill="#9370db"/>
+        <circle cx="0" cy="0" r="3" fill="#dda0dd"/>
+        <line x1="0" y1="0" x2="0" y2="15" stroke="#4caf50" stroke-width="2"/>
+      </g>
+      
+      <g transform="translate(590, 125)">
+        <circle cx="0" cy="0" r="5" fill="#9370db"/>
+        <circle cx="0" cy="0" r="3" fill="#dda0dd"/>
+        <line x1="0" y1="0" x2="0" y2="15" stroke="#4caf50" stroke-width="2"/>
+      </g>
+      
+      <g transform="translate(710, 125)">
+        <circle cx="0" cy="0" r="5" fill="#9370db"/>
+        <circle cx="0" cy="0" r="3" fill="#dda0dd"/>
+        <line x1="0" y1="0" x2="0" y2="15" stroke="#4caf50" stroke-width="2"/>
+      </g>
+    </svg>
+  </div>
+</body>
+</html>
